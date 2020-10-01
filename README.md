@@ -29,7 +29,7 @@ Add this information to your README.
 
 
 Overview
-In labs 2 and 3, you and your partner(s) will be using the provided JSON files to create a photo gallery. You will style it using floats.
+In labs 2 and 3, you And your partner(s) will be using the provided JSON files to create a photo gallery. You will style it using floats.
 
 You have the option of using the provided index.html file, but it is not a requirement.
 
