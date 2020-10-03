@@ -1,26 +1,28 @@
 'use strict';
 
 $().ready(() => {
-  const dataArray = [];
+  const animalsArray = [];
+  $.ajax('data/page-1.json', { method: 'GET', dataType: 'JSON' }).then((data) => {
+    data.forEach(hornedAnimal => {
+      var newAnimal = new Animal(hornedAnimal);
+      newAnimal.createRender();
 
-  $.ajax('data/page-1.json', {method: 'GET', dataType: 'JSON' })
-    .then((horns) => {
-      horns.forEach((horned) => {
-        new Pics(horned);
-      });
-      dropdown();
-      numsort();
-      dataArray.forEach((mammals) => {
-        $('main').append(mammals.createHTML());
-      });
-    }
-    );
-  function Pics(object) {
-    this.image_url = object.image_url;
+    });
+  });
+  function Animal(object) {
     this.title = object.title;
     this.description = object.description;
     this.keyword = object.keyword;
     this.horns = object.horns;
-    dataArray.push(this);
+    this.image_url = object.image_url;
+    animalsArray.push(this);
+  }
+  Animal.prototype.createRender = function () {
+    const $templateClone = $('#photo-template').clone();
+    $templateClone.css('display', 'block')
+    $templateClone.find('h2').text(this.title);
+    $templateClone.find('img').attr('src', this.image_url);
+    $templateClone.find('p').text(this.description);
+    $('main').append($templateClone)
   };
-})
+});
