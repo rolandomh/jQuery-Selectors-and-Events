@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>The Gallery of Horns</title>
+  <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="./css/base.css" />
+  <link rel="stylesheet" type="text/css" href="./css/layouts.css" />
+  <link rel="stylesheet" type="text/css" href="./css/module.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/mustache@latest"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script id="template" type="x-tmpl-mustache">
+    <section id="photo-template" class="{{keyword}}">
+      <h2>{{title}}</h2>
+      <img src="{{image_url}}" />
+      <p>{{description}}</p>
+    </section>
+  </script>
+
+</head>
+   <body>
+        <header>
+          <h1>The Gallery of Horns</h1>
+          <select>
+            <option value="default">Filter by Keyword</option>
+          </select>
+          <select id="dropdown">
+            <option value="default">Sort Images</option>
+            <option value="alphabetical">Alphabetical</option>
+            <option value="number-horns">Number of Horns</option>
+          </select>
+        </header>
+        <main2></main2>
+        <main>
+          <!-- <div id="photo-container">
+            <section id="photo-template">
+      
+              <h2></h2>
+              <img src="" alt="">
+              <p></p>
+            </section>
+          </div>
+        <div class="pagination">
+          <a href="#">&laquo;</a>
+          <a class="active" href="index.html">1</a>
+          <a href="index2.html">2</a>
+          <a href="index2.html">&raquo;</a>
+        </div>
+        <footer>
+
+        </footer> -->
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://unpkg.com/mustache@latest"></script>
+        <script type= "text/javaScript" src= "js/app.js" ></script>
+
+    </body>
+    </html>
