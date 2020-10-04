@@ -8,10 +8,9 @@
   <link rel="stylesheet" type="text/css" href="./css/layouts.css" />
   <link rel="stylesheet" type="text/css" href="./css/module.css" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/mustache@latest"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script id="template" type="x-tmpl-mustache">
-    <section id="photo-template" class="{{keyword}}">
+  <script id="mustacheHelp" type="text/x-tmpl-mustache">
+    <section class="{{keyword}}">
       <h2>{{title}}</h2>
       <img src="{{image_url}}" />
       <p>{{description}}</p>
@@ -31,9 +30,8 @@
             <option value="number-horns">Number of Horns</option>
           </select>
         </header>
-        <main2></main2>
         <main>
-          <!-- <div id="photo-container">
+          <div id="photo-container">
             <section id="photo-template">
       
               <h2></h2>
@@ -49,7 +47,7 @@
         </div>
         <footer>
 
-        </footer> -->
+        </footer>
         </main>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -58,3 +56,8 @@
 
     </body>
     </html>
+
+
+
+
+    
