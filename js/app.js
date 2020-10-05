@@ -40,6 +40,8 @@ $().ready(() => {
       }
     })
 
+    // .on( events [, selector ] [, data ] )
+
     // add event listener to dropdown
     $('#dropDown').on('change', function () {
       $('.animal').remove();
