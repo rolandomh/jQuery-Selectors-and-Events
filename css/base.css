@@ -1,0 +1,13 @@
+*{
+  box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgb(64, 33, 151);
+  color: rgb(158, 173, 19);
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+body{
+  /* background: rgb(61, 170, 206); */
+  margin: auto;
+}
